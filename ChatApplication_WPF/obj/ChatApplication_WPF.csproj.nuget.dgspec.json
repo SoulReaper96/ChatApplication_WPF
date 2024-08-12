@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "G:\\Studies\\ChatApplication_WPF\\ChatApplication_WPF\\ChatApplication_WPF.csproj": {}
+    "D:\\Mr. Reapers' Docs\\GitHub Repositories\\SoulReaper96\\ChatApplication_WPF\\ChatApplication_WPF\\ChatApplication_WPF.csproj": {}
   },
   "projects": {
-    "G:\\Studies\\ChatApplication_WPF\\ChatApplication_WPF\\ChatApplication_WPF.csproj": {
+    "D:\\Mr. Reapers' Docs\\GitHub Repositories\\SoulReaper96\\ChatApplication_WPF\\ChatApplication_WPF\\ChatApplication_WPF.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\Studies\\ChatApplication_WPF\\ChatApplication_WPF\\ChatApplication_WPF.csproj",
+        "projectUniqueName": "D:\\Mr. Reapers' Docs\\GitHub Repositories\\SoulReaper96\\ChatApplication_WPF\\ChatApplication_WPF\\ChatApplication_WPF.csproj",
         "projectName": "ChatApplication_WPF",
-        "projectPath": "G:\\Studies\\ChatApplication_WPF\\ChatApplication_WPF\\ChatApplication_WPF.csproj",
+        "projectPath": "D:\\Mr. Reapers' Docs\\GitHub Repositories\\SoulReaper96\\ChatApplication_WPF\\ChatApplication_WPF\\ChatApplication_WPF.csproj",
         "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "G:\\Studies\\ChatApplication_WPF\\ChatApplication_WPF\\obj\\",
+        "outputPath": "D:\\Mr. Reapers' Docs\\GitHub Repositories\\SoulReaper96\\ChatApplication_WPF\\ChatApplication_WPF\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
