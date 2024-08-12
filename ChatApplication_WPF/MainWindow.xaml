@@ -1,0 +1,178 @@
+﻿<Window x:Class="ChatApplication_WPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ChatApplication_WPF"
+        mc:Ignorable="d"
+        x:Name="mainWindow"
+        AllowsTransparency="True"
+        Background="Transparent"
+        Title="Chat App" 
+        FontSize="15"
+        Height="768" 
+        Width="1250"
+        ResizeMode="NoResize"
+        WindowStyle="None"
+        WindowStartupLocation="CenterScreen">
+    <!--Structuring Main Window-->
+    <Border
+        CornerRadius="20"
+        Background="WhiteSmoke">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <!--For Contact Chat List-->
+
+                <ColumnDefinition/>
+                <!--For Conversation-->
+
+                <ColumnDefinition Width="Auto"/>
+                <!--For Profile Info-->
+            </Grid.ColumnDefinitions>
+
+            <!--Title Bar-->
+            <Border
+                Background="#49a078"
+                CornerRadius="20 20 0 0"
+                Grid.ColumnSpan="3"
+                Height="30"
+                MouseDown="Border_MouseDown">
+                <Grid>
+                    <TextBlock
+                        Text="{Binding Title, ElementName = mainWindow}"
+                        HorizontalAlignment="Left"
+                        Margin="15,0,0,0"
+                        VerticalAlignment="Center"
+                        Foreground="White"
+                        FontSize="22"
+                        FontWeight="Bold">
+                    </TextBlock>
+
+                    <!--Window Buttons-->
+                    <StackPanel
+                        HorizontalAlignment="Right"
+                        Margin="10 0"
+                        Orientation="Horizontal">
+                        <Button x:Name="minimizeButton"
+                                Style="{StaticResource CustomButtonStyle}"
+                                Click="minimizeButton_Click"
+                                Width="20"
+                                Height="20">
+                            <Image Source="G:/Studies/ChatApplication_WPF/ChatApplication_WPF/Icons/subtract-line.png"/>
+                        </Button>
+                        <Button x:Name="restoreButton"
+                                Style="{StaticResource CustomButtonStyle}"
+                                Click="restoreButton_Click"
+                                Width="20"
+                                Height="20">
+                            <Image Source="G:/Studies/ChatApplication_WPF/ChatApplication_WPF/Icons/maximize.png"/>
+                        </Button>
+                        <Button x:Name="closeButton"
+                                Style="{StaticResource CustomButtonStyle}"
+                                Click="closeButton_Click"
+                                Width="20"
+                                Height="20">
+                            <Image Source="G:/Studies/ChatApplication_WPF/ChatApplication_WPF/Icons/close.png"/>
+                        </Button>
+                    </StackPanel>
+                </Grid>
+            </Border>
+
+            <Grid Grid.Row="1" MinWidth="406">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <!--Title & Search Options-->
+
+                    <RowDefinition Height="Auto"/>
+                    <!--Searchbox-->
+
+                    <RowDefinition Height="Auto"/>
+                    <!--Status Thumbs-->
+
+                    <RowDefinition/>
+                    <!--Chat List-->
+                </Grid.RowDefinitions>
+                <!--Title & Search Options-->
+                <Grid
+                    Height="75"
+                    Margin="15 0 0 0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <!--Title-->
+
+                        <ColumnDefinition Width="Auto"/>
+                        <!--Blank-->
+
+                        <ColumnDefinition Width="40"/>
+                        <!--Search Button-->
+
+                        <ColumnDefinition Width="40"/>
+                        <!--More Options Buttons-->
+                    </Grid.ColumnDefinitions>
+
+                    <TextBlock
+                        Text="Chats"
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Center"
+                        FontSize="20"
+                        FontWeight="SemiBold">
+                    </TextBlock>
+
+                    <Button x:Name="searchButton"
+                            Grid.Column="2"
+                            Style="{StaticResource CustomButtonStyle}" 
+                            Click="searchButton_Click" 
+                            Width="30" 
+                            Height="30">
+                        <Image Source="G:/Studies/ChatApplication_WPF/ChatApplication_WPF/Icons/search.png"/>
+                    </Button>
+
+                    <ToggleButton x:Name="moreOptionsButton"
+                            Grid.Column="3"
+                            Style="{StaticResource ToggleIconButtonStyle}" 
+                            Click="moreOptionsButton_Click" 
+                            Width="30" 
+                            Height="30">
+                        <Image Source="G:/Studies/ChatApplication_WPF/ChatApplication_WPF/Icons/dots-vertical.png"/>
+                    </ToggleButton>
+                </Grid>
+
+                <!--#region Searchbox-->
+                <!--To-Do Add Search Box Open/Close Triggers-->
+                <Border
+                    Background="#dce1de"
+                    CornerRadius="15"
+                    Grid.Row="1"
+                    Margin="20 0 0 0"
+                    Height="50"
+                    x:Name="searchBoxBorder"
+                    FocusManager.FocusedElement="{Binding ElementName = searchQuery}">
+                    <TextBox
+                        Background="Transparent"
+                        BorderThickness="0"
+                        Name="searchQuery"
+                        Padding="12 0 0 0"
+                        Text="Search Text"
+                        VerticalContentAlignment="Center"
+                        VerticalAlignment="Stretch">
+
+                    </TextBox>
+                </Border>
+                <!--#endregion-->
+
+                <!--#region Status Thumbs-->
+                <local:StatusThumbs
+                    x:Name="statusThumbs"
+                    Grid.Row="2">
+
+                </local:StatusThumbs>
+                <!--#endregion-->
+            </Grid>
+        </Grid>
+    </Border>
+</Window>
