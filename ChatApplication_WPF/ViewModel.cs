@@ -32,21 +32,21 @@ namespace ChatApplication_WPF
                 {
                     ContactName = "Jane",
                     ContactPhoto = new Uri("G:/Studies/ChatApplication_WPF/ChatApplication_WPF/Images/user4.jpg", UriKind.RelativeOrAbsolute),
-                    StatusImage = new Uri("G:/Studies/ChatApplication_WPF/ChatApplication_WPF/Images/status4.jpg", UriKind.RelativeOrAbsolute),
+                    StatusImage = new Uri("G:/Studies/ChatApplication_WPF/ChatApplication_WPF/Images/status2.jpg", UriKind.RelativeOrAbsolute),
                     IsMeAddStatus = false
                 },
                 new()
                 {
                     ContactName = "Stella",
                     ContactPhoto = new Uri("G:/Studies/ChatApplication_WPF/ChatApplication_WPF/Images/user0.jpg", UriKind.RelativeOrAbsolute),
-                    StatusImage = new Uri("G:/Studies/ChatApplication_WPF/ChatApplication_WPF/Images/status2.jpg", UriKind.RelativeOrAbsolute),
+                    StatusImage = new Uri("G:/Studies/ChatApplication_WPF/ChatApplication_WPF/Images/status3.jpg", UriKind.RelativeOrAbsolute),
                     IsMeAddStatus = false
                 },
                 new()
                 {
                     ContactName = "Joe",
                     ContactPhoto = new Uri("G:/Studies/ChatApplication_WPF/ChatApplication_WPF/Images/user3.jpg", UriKind.RelativeOrAbsolute),
-                    StatusImage = new Uri("G:/Studies/ChatApplication_WPF/ChatApplication_WPF/Images/status3.jpg", UriKind.RelativeOrAbsolute),
+                    StatusImage = new Uri("G:/Studies/ChatApplication_WPF/ChatApplication_WPF/Images/status4.jpg", UriKind.RelativeOrAbsolute),
                     IsMeAddStatus = false
                 },
             ];

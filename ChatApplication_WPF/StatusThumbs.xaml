@@ -7,7 +7,6 @@
              mc:Ignorable="d">
     <UserControl.Resources>
         <!-- Define Static Resources -->
-        <Geometry x:Key="addSign">M10,10 L20,20 M20,10 L10,20</Geometry>
 
         <!-- Define the DataTemplate with the key 'thumbsTemplate' -->
         <DataTemplate x:Key="thumbsTemplate" DataType="{x:Type Button}">
@@ -23,7 +22,7 @@
                         Width="55" 
                         Height="55"
                         Stretch="Uniform"
-                        StrokeThickness="1"
+                        StrokeThickness="1.5"
                         Stroke="#49a078"
                         StrokeDashArray="4"
                         StrokeDashCap="Round"
@@ -58,15 +57,15 @@
                     </Ellipse>
 
                     <Path
-                        Data="{StaticResource addSign}"
-                        Fill="#dce1de"
+                        Stroke="#dce1de"
                         StrokeThickness="2"
+                        Data="M 10,0 L 10,20 M 0,10 L 20,10"            
                         VerticalAlignment="Center"
                         HorizontalAlignment="Center">
                         <Path.Style>
                             <Style TargetType="{x:Type Path}">
                                 <Style.Triggers>
-                                    <DataTrigger Binding="{Binding IsMeAddStatus}" Value="True">
+                                    <DataTrigger Binding="{Binding IsMeAddStatus}" Value="False">
                                         <Setter Property="Visibility" Value="Hidden"/>
                                     </DataTrigger>
                                 </Style.Triggers>
