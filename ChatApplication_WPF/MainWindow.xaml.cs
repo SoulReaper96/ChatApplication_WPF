@@ -29,12 +29,12 @@ namespace ChatApplication_WPF
             }
         }
 
-        private void minimizeButton_Click(object sender, RoutedEventArgs e)
+        private void MinimizeButton_Click(object sender, RoutedEventArgs e)
         {
             WindowState = WindowState.Minimized;
         }
 
-        private void restoreButton_Click(object sender, RoutedEventArgs e)
+        private void RestoreButton_Click(object sender, RoutedEventArgs e)
         {
             if (WindowState == WindowState.Normal)
             {
@@ -46,17 +46,17 @@ namespace ChatApplication_WPF
             }
         }
 
-        private void closeButton_Click(object sender, RoutedEventArgs e)
+        private void CloseButton_Click(object sender, RoutedEventArgs e)
         {
             Application.Current.Shutdown();
         }
 
-        private void searchButton_Click(object sender, RoutedEventArgs e)
+        private void SearchButton_Click(object sender, RoutedEventArgs e)
         {
 
         }
 
-        private void moreOptionsButton_Click(object sender, RoutedEventArgs e)
+        private void MoreOptionsButton_Click(object sender, RoutedEventArgs e)
         {
 
         }

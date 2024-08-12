@@ -11,11 +11,11 @@ namespace ChatApplication_WPF
 {
     public class ViewModel : INotifyPropertyChanged
     {
-        public ObservableCollection<StatusDataModel> statusThumbs { get; set; }
+        public ObservableCollection<StatusDataModel> StatusThumbs { get; set; }
 
         public ViewModel() 
         {
-            statusThumbs =
+            StatusThumbs =
             [
                 new() 
                 {
@@ -24,27 +24,34 @@ namespace ChatApplication_WPF
                 new() 
                 {
                     ContactName = "Mike",
-                    ContactImage = new Uri("G:/Studies/ChatApplication_WPF/ChatApplication_WPF/Images/user1.png", UriKind.RelativeOrAbsolute),
+                    ContactPhoto = new Uri("G:/Studies/ChatApplication_WPF/ChatApplication_WPF/Images/user1.jpg", UriKind.RelativeOrAbsolute),
                     StatusImage = new Uri("G:/Studies/ChatApplication_WPF/ChatApplication_WPF/Images/status1.jpg", UriKind.RelativeOrAbsolute),
                     IsMeAddStatus = false
                 },
                 new()
                 {
+                    ContactName = "Jane",
+                    ContactPhoto = new Uri("G:/Studies/ChatApplication_WPF/ChatApplication_WPF/Images/user4.jpg", UriKind.RelativeOrAbsolute),
+                    StatusImage = new Uri("G:/Studies/ChatApplication_WPF/ChatApplication_WPF/Images/status4.jpg", UriKind.RelativeOrAbsolute),
+                    IsMeAddStatus = false
+                },
+                new()
+                {
                     ContactName = "Stella",
-                    ContactImage = new Uri("G:/Studies/ChatApplication_WPF/ChatApplication_WPF/Images/user2.png", UriKind.RelativeOrAbsolute),
+                    ContactPhoto = new Uri("G:/Studies/ChatApplication_WPF/ChatApplication_WPF/Images/user0.jpg", UriKind.RelativeOrAbsolute),
                     StatusImage = new Uri("G:/Studies/ChatApplication_WPF/ChatApplication_WPF/Images/status2.jpg", UriKind.RelativeOrAbsolute),
                     IsMeAddStatus = false
                 },
                 new()
                 {
-                    ContactName = "John",
-                    ContactImage = new Uri("G:/Studies/ChatApplication_WPF/ChatApplication_WPF/Images/user3.png", UriKind.RelativeOrAbsolute),
+                    ContactName = "Joe",
+                    ContactPhoto = new Uri("G:/Studies/ChatApplication_WPF/ChatApplication_WPF/Images/user3.jpg", UriKind.RelativeOrAbsolute),
                     StatusImage = new Uri("G:/Studies/ChatApplication_WPF/ChatApplication_WPF/Images/status3.jpg", UriKind.RelativeOrAbsolute),
                     IsMeAddStatus = false
                 },
             ];
 
-            OnPropertyChanged(nameof(statusThumbs));
+            OnPropertyChanged(nameof(StatusThumbs));
         }
 
         public event PropertyChangedEventHandler? PropertyChanged;

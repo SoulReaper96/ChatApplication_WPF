@@ -7,14 +7,13 @@
              mc:Ignorable="d">
     <UserControl.Resources>
         <!-- Define Static Resources -->
-        <ImageBrush x:Key="StatusImage" ImageSource="G:/Studies/ChatApplication_WPF/ChatApplication_WPF/Images/status1.jpg"/>
         <Geometry x:Key="addSign">M10,10 L20,20 M20,10 L10,20</Geometry>
 
         <!-- Define the DataTemplate with the key 'thumbsTemplate' -->
         <DataTemplate x:Key="thumbsTemplate" DataType="{x:Type Button}">
-            <Grid>
+            <Grid Margin="0 0 8 0">
                 <Grid.RowDefinitions>
-                    <RowDefinition/>
+                    <RowDefinition Height="80"/>
                     <RowDefinition/>
                     <RowDefinition/>
                 </Grid.RowDefinitions>
@@ -26,7 +25,7 @@
                         Stretch="Uniform"
                         StrokeThickness="1"
                         Stroke="#49a078"
-                        StrokeDashArray="5"
+                        StrokeDashArray="4"
                         StrokeDashCap="Round"
                         VerticalAlignment="Center"
                         HorizontalAlignment="Center" />
@@ -36,9 +35,9 @@
                         Width="50" 
                         Height="50"
                         Stretch="Uniform"
-                        StrokeThickness="1"
+                        StrokeThickness="0"
                         Stroke="#49a078"
-                        StrokeDashArray="5"
+                        StrokeDashArray="0"
                         StrokeDashCap="Round"
                         VerticalAlignment="Center"
                         HorizontalAlignment="Center">
@@ -49,7 +48,7 @@
                                     <DataTrigger Binding="{Binding IsMeAddStatus}" Value="False">
                                         <Setter Property="Fill">
                                             <Setter.Value>
-                                                <ImageBrush Stretch="UniformToFill" ImageSource="G:/Studies/ChatApplication_WPF/ChatApplication_WPF/Images/status1.jpg"/>
+                                                <ImageBrush Stretch="UniformToFill" ImageSource="{Binding StatusImage}"/>
                                             </Setter.Value>
                                         </Setter>
                                     </DataTrigger>
@@ -78,12 +77,13 @@
 
                 <Ellipse
                     Name="contactPhotoEllipse"
+                    Margin="40 0 0 8"
                     Width="26" 
                     Height="26"
                     Stretch="Uniform"
-                    StrokeThickness="2"
+                    StrokeThickness="1"
                     Stroke="#dce1de"
-                    StrokeDashArray="5"
+                    StrokeDashArray=""
                     VerticalAlignment="Bottom"
                     HorizontalAlignment="Right">
                     <Ellipse.Fill>
@@ -93,7 +93,7 @@
                         <Style TargetType="{x:Type Ellipse}">
                             <Setter Property="Fill" Value="#49a078" />
                             <Style.Triggers>
-                                <DataTrigger Binding="{Binding IsAddStatusTrue}" Value="True">
+                                <DataTrigger Binding="{Binding IsMeAddStatus}" Value="True">
                                     <Setter Property="Visibility" Value="Hidden"/>
                                 </DataTrigger>
                             </Style.Triggers>
@@ -111,7 +111,10 @@
     </UserControl.Resources>
 
     <!-- Reference the thumbsTemplate resource in the ItemsControl -->
-    <ItemsControl ItemTemplate="{StaticResource thumbsTemplate}" ItemsSource="{Binding statusThumbs, UpdateSourceTrigger=PropertyChanged}">
+    <ItemsControl
+        Margin="15 0 0 0"
+        ItemTemplate="{StaticResource thumbsTemplate}" 
+        ItemsSource="{Binding StatusThumbs, UpdateSourceTrigger=PropertyChanged}">
         <ItemsControl.DataContext>
             <local:ViewModel/>
         </ItemsControl.DataContext>

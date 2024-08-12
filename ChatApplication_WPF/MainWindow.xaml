@@ -60,21 +60,21 @@
                         Orientation="Horizontal">
                         <Button x:Name="minimizeButton"
                                 Style="{StaticResource CustomButtonStyle}"
-                                Click="minimizeButton_Click"
+                                Click="MinimizeButton_Click"
                                 Width="20"
                                 Height="20">
                             <Image Source="G:/Studies/ChatApplication_WPF/ChatApplication_WPF/Icons/subtract-line.png"/>
                         </Button>
                         <Button x:Name="restoreButton"
                                 Style="{StaticResource CustomButtonStyle}"
-                                Click="restoreButton_Click"
+                                Click="RestoreButton_Click"
                                 Width="20"
                                 Height="20">
                             <Image Source="G:/Studies/ChatApplication_WPF/ChatApplication_WPF/Icons/maximize.png"/>
                         </Button>
                         <Button x:Name="closeButton"
                                 Style="{StaticResource CustomButtonStyle}"
-                                Click="closeButton_Click"
+                                Click="CloseButton_Click"
                                 Width="20"
                                 Height="20">
                             <Image Source="G:/Studies/ChatApplication_WPF/ChatApplication_WPF/Icons/close.png"/>
@@ -126,7 +126,7 @@
                     <Button x:Name="searchButton"
                             Grid.Column="2"
                             Style="{StaticResource CustomButtonStyle}" 
-                            Click="searchButton_Click" 
+                            Click="SearchButton_Click" 
                             Width="30" 
                             Height="30">
                         <Image Source="G:/Studies/ChatApplication_WPF/ChatApplication_WPF/Icons/search.png"/>
@@ -135,7 +135,7 @@
                     <ToggleButton x:Name="moreOptionsButton"
                             Grid.Column="3"
                             Style="{StaticResource ToggleIconButtonStyle}" 
-                            Click="moreOptionsButton_Click" 
+                            Click="MoreOptionsButton_Click" 
                             Width="30" 
                             Height="30">
                         <Image Source="G:/Studies/ChatApplication_WPF/ChatApplication_WPF/Icons/dots-vertical.png"/>
