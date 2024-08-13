@@ -169,8 +169,14 @@
                 <local:StatusThumbs
                     x:Name="statusThumbs"
                     Grid.Row="2">
-
                 </local:StatusThumbs>
+                <!--#endregion-->
+                
+                <!--#region Chat List-->
+                <local:ChatList
+                    x:Name="chatList"
+                    Grid.Row="3">
+                </local:ChatList>
                 <!--#endregion-->
             </Grid>
         </Grid>

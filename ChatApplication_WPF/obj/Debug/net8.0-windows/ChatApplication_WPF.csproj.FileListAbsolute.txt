@@ -47,3 +47,5 @@ D:\Mr. Reapers' Docs\GitHub Repositories\SoulReaper96\ChatApplication_WPF\ChatAp
 D:\Mr. Reapers' Docs\GitHub Repositories\SoulReaper96\ChatApplication_WPF\ChatApplication_WPF\obj\Debug\net8.0-windows\ChatApplication_WPF.pdb
 D:\Mr. Reapers' Docs\GitHub Repositories\SoulReaper96\ChatApplication_WPF\ChatApplication_WPF\obj\Debug\net8.0-windows\ChatApplication_WPF.genruntimeconfig.cache
 D:\Mr. Reapers' Docs\GitHub Repositories\SoulReaper96\ChatApplication_WPF\ChatApplication_WPF\obj\Debug\net8.0-windows\ref\ChatApplication_WPF.dll
+D:\Mr. Reapers' Docs\GitHub Repositories\SoulReaper96\ChatApplication_WPF\ChatApplication_WPF\obj\Debug\net8.0-windows\ChatList.g.cs
+D:\Mr. Reapers' Docs\GitHub Repositories\SoulReaper96\ChatApplication_WPF\ChatApplication_WPF\obj\Debug\net8.0-windows\ChatList.baml

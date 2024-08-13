@@ -1,0 +1,37 @@
+﻿<UserControl x:Class="ChatApplication_WPF.ChatList"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:ChatApplication_WPF"
+             mc:Ignorable="d" 
+             d:MinWidth="406">
+    <UserControl.Resources>
+        <DataTemplate x:Key="chatButtonItemTemplate">
+            <Grid>
+                
+            </Grid>
+        </DataTemplate>
+    </UserControl.Resources>
+    <Grid Margin="15 0">
+        <!--List of Chats-->
+        <StackPanel Orientation="Horizontal">
+            <Path 
+                Fill="Gray" 
+                Data="M10,10 L90,10 C95,10 100,15 100,20 L100,70 C100,75 95,80 90,80 L30,80 L10,100 L10,20 C10,15 15,10 20,10 Z"
+                Style="{StaticResource {x:Type Path}}"/>
+            <TextBlock
+                Text="All Chats"
+                FontWeight="SemiBold"
+                VerticalAlignment="Center">
+            </TextBlock>
+            <ItemsControl 
+                ItemsSource="{Binding Chats}"
+                ItemTemplate="{StaticResource chatButtonItemTemplate}">
+                <ItemsControl.DataContext>
+                    <local:ViewModel/>
+                </ItemsControl.DataContext>
+            </ItemsControl>
+        </StackPanel>
+    </Grid>
+</UserControl>
