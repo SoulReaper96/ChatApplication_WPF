@@ -49,3 +49,30 @@ D:\Mr. Reapers' Docs\GitHub Repositories\SoulReaper96\ChatApplication_WPF\ChatAp
 D:\Mr. Reapers' Docs\GitHub Repositories\SoulReaper96\ChatApplication_WPF\ChatApplication_WPF\obj\Debug\net8.0-windows\ref\ChatApplication_WPF.dll
 D:\Mr. Reapers' Docs\GitHub Repositories\SoulReaper96\ChatApplication_WPF\ChatApplication_WPF\obj\Debug\net8.0-windows\ChatList.g.cs
 D:\Mr. Reapers' Docs\GitHub Repositories\SoulReaper96\ChatApplication_WPF\ChatApplication_WPF\obj\Debug\net8.0-windows\ChatList.baml
+G:\GitHub Repo Cloned\SoulReaper96\ChatApplication_WPF\ChatApplication_WPF\bin\Debug\net8.0-windows\ChatApplication_WPF.exe
+G:\GitHub Repo Cloned\SoulReaper96\ChatApplication_WPF\ChatApplication_WPF\bin\Debug\net8.0-windows\ChatApplication_WPF.deps.json
+G:\GitHub Repo Cloned\SoulReaper96\ChatApplication_WPF\ChatApplication_WPF\bin\Debug\net8.0-windows\ChatApplication_WPF.runtimeconfig.json
+G:\GitHub Repo Cloned\SoulReaper96\ChatApplication_WPF\ChatApplication_WPF\bin\Debug\net8.0-windows\ChatApplication_WPF.dll
+G:\GitHub Repo Cloned\SoulReaper96\ChatApplication_WPF\ChatApplication_WPF\bin\Debug\net8.0-windows\ChatApplication_WPF.pdb
+G:\GitHub Repo Cloned\SoulReaper96\ChatApplication_WPF\ChatApplication_WPF\obj\Debug\net8.0-windows\ChatList.g.cs
+G:\GitHub Repo Cloned\SoulReaper96\ChatApplication_WPF\ChatApplication_WPF\obj\Debug\net8.0-windows\MainWindow.g.cs
+G:\GitHub Repo Cloned\SoulReaper96\ChatApplication_WPF\ChatApplication_WPF\obj\Debug\net8.0-windows\StatusThumbs.g.cs
+G:\GitHub Repo Cloned\SoulReaper96\ChatApplication_WPF\ChatApplication_WPF\obj\Debug\net8.0-windows\App.g.cs
+G:\GitHub Repo Cloned\SoulReaper96\ChatApplication_WPF\ChatApplication_WPF\obj\Debug\net8.0-windows\GeneratedInternalTypeHelper.g.cs
+G:\GitHub Repo Cloned\SoulReaper96\ChatApplication_WPF\ChatApplication_WPF\obj\Debug\net8.0-windows\ChatApplication_WPF_MarkupCompile.cache
+G:\GitHub Repo Cloned\SoulReaper96\ChatApplication_WPF\ChatApplication_WPF\obj\Debug\net8.0-windows\ChatApplication_WPF_MarkupCompile.lref
+G:\GitHub Repo Cloned\SoulReaper96\ChatApplication_WPF\ChatApplication_WPF\obj\Debug\net8.0-windows\App.baml
+G:\GitHub Repo Cloned\SoulReaper96\ChatApplication_WPF\ChatApplication_WPF\obj\Debug\net8.0-windows\ChatList.baml
+G:\GitHub Repo Cloned\SoulReaper96\ChatApplication_WPF\ChatApplication_WPF\obj\Debug\net8.0-windows\MainWindow.baml
+G:\GitHub Repo Cloned\SoulReaper96\ChatApplication_WPF\ChatApplication_WPF\obj\Debug\net8.0-windows\StatusThumbs.baml
+G:\GitHub Repo Cloned\SoulReaper96\ChatApplication_WPF\ChatApplication_WPF\obj\Debug\net8.0-windows\ChatApplication_WPF.g.resources
+G:\GitHub Repo Cloned\SoulReaper96\ChatApplication_WPF\ChatApplication_WPF\obj\Debug\net8.0-windows\ChatApplication_WPF.GeneratedMSBuildEditorConfig.editorconfig
+G:\GitHub Repo Cloned\SoulReaper96\ChatApplication_WPF\ChatApplication_WPF\obj\Debug\net8.0-windows\ChatApplication_WPF.AssemblyInfoInputs.cache
+G:\GitHub Repo Cloned\SoulReaper96\ChatApplication_WPF\ChatApplication_WPF\obj\Debug\net8.0-windows\ChatApplication_WPF.AssemblyInfo.cs
+G:\GitHub Repo Cloned\SoulReaper96\ChatApplication_WPF\ChatApplication_WPF\obj\Debug\net8.0-windows\ChatApplication_WPF.csproj.CoreCompileInputs.cache
+G:\GitHub Repo Cloned\SoulReaper96\ChatApplication_WPF\ChatApplication_WPF\obj\Debug\net8.0-windows\ChatApplication_WPF.sourcelink.json
+G:\GitHub Repo Cloned\SoulReaper96\ChatApplication_WPF\ChatApplication_WPF\obj\Debug\net8.0-windows\ChatApplication_WPF.dll
+G:\GitHub Repo Cloned\SoulReaper96\ChatApplication_WPF\ChatApplication_WPF\obj\Debug\net8.0-windows\refint\ChatApplication_WPF.dll
+G:\GitHub Repo Cloned\SoulReaper96\ChatApplication_WPF\ChatApplication_WPF\obj\Debug\net8.0-windows\ChatApplication_WPF.pdb
+G:\GitHub Repo Cloned\SoulReaper96\ChatApplication_WPF\ChatApplication_WPF\obj\Debug\net8.0-windows\ChatApplication_WPF.genruntimeconfig.cache
+G:\GitHub Repo Cloned\SoulReaper96\ChatApplication_WPF\ChatApplication_WPF\obj\Debug\net8.0-windows\ref\ChatApplication_WPF.dll

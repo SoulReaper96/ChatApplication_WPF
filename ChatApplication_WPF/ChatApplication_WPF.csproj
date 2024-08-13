@@ -8,4 +8,19 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="Icons\chatblank.png" />
+    <None Remove="Icons\chatdots.png" />
+    <None Remove="Icons\chattext.png" />
+    <None Remove="Resources\chatblank.png" />
+    <None Remove="Resources\chatdots.png" />
+    <None Remove="Resources\chattext.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\chatblank.png" />
+    <Resource Include="Resources\chatdots.png" />
+    <Resource Include="Resources\chattext.png" />
+  </ItemGroup>
+
 </Project>

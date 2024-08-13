@@ -4,7 +4,14 @@
              xmlns:local="clr-namespace:ChatApplication_WPF"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-        <!--Style For Buttons-->
+        <!-- Define icons as static resources -->
+        <BitmapImage x:Key="ChatBlank" UriSource="Resources/chatblank.png"/>
+        <BitmapImage x:Key="ChatDots" UriSource="Resources/chatdots.png"/>
+        <BitmapImage x:Key="ChatText" UriSource="Resources/chattext.png"/>
+        <BitmapImage x:Key="MessageOne" UriSource="Resources/message1.png"/>
+        <BitmapImage x:Key="MessageTwo" UriSource="Resources/message2.png"/>
+
+        <!--Style For Buttons-->        
         <Style x:Key="CustomButtonStyle" TargetType="{x:Type Button}">
             <Setter Property="Background" Value="#49a078"/>
             <Setter Property="Foreground" Value="White"/>
