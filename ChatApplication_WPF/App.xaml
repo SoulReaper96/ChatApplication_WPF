@@ -8,8 +8,9 @@
         <BitmapImage x:Key="ChatBlank" UriSource="Resources/chatblank.png"/>
         <BitmapImage x:Key="ChatDots" UriSource="Resources/chatdots.png"/>
         <BitmapImage x:Key="ChatText" UriSource="Resources/chattext.png"/>
-        <BitmapImage x:Key="MessageOne" UriSource="Resources/message1.png"/>
-        <BitmapImage x:Key="MessageTwo" UriSource="Resources/message2.png"/>
+        <BitmapImage x:Key="MessageOne" UriSource="Resources/message.png"/>
+        <BitmapImage x:Key="MessageTwo" UriSource="Resources/message-dots.png"/>
+        <BitmapImage x:Key="MessageThree" UriSource="Resources/message-plus.png"/>
 
         <!--Style For Buttons-->        
         <Style x:Key="CustomButtonStyle" TargetType="{x:Type Button}">

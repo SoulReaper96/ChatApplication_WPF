@@ -85,21 +85,24 @@ namespace ChatApplication_WPF
                 ContactName = "Stella",
                 ContactPhoto = new Uri("G:/Studies/ChatApplication_WPF/ChatApplication_WPF/Images/user0.jpg", UriKind.RelativeOrAbsolute),
                 Message = "Hello, how are you?",
-                LastMessageTime = "Tue, 11:30 AM"
+                LastMessageTime = "Tue, 11:30 AM",
+                ChatIsSelected = true
             },
             new ChatListData
             {
                 ContactName = "Joe",
                 ContactPhoto = new Uri("G:/Studies/ChatApplication_WPF/ChatApplication_WPF/Images/user3.jpg", UriKind.RelativeOrAbsolute),
                 Message = "I haven't seen you in a long time, how are you?",
-                LastMessageTime = "Tue, 11:30 AM"
+                LastMessageTime = "Tue, 11:30 AM",
+                ChatIsSelected = true
             },
             new ChatListData
             {
                 ContactName = "Mike",
                 ContactPhoto = new Uri("G:/Studies/ChatApplication_WPF/ChatApplication_WPF/Images/user1.jpg", UriKind.RelativeOrAbsolute),
                 Message = "Where are you? I am in the city.",
-                LastMessageTime = "Tue, 11:30 AM"
+                LastMessageTime = "Tue, 11:30 AM",
+                ChatIsSelected = true
             }
             ];
 

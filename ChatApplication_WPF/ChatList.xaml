@@ -8,20 +8,57 @@
              d:MinWidth="406">
     <UserControl.Resources>
         <DataTemplate x:Key="chatButtonItemTemplate">
-            <Grid>
-                
-            </Grid>
+            <RadioButton GroupName="ChatButton">
+                <RadioButton.Style>
+                    <Style TargetType="{x:Type ToggleButton}">
+                        <Setter Property="SnapsToDevicePixels" Value="True"/>
+                        <Setter Property="MinHeight" Value="80"/>
+                        <Setter Property="Padding" Value="10"/>
+                        <Setter Property="HorizontalContentAlignment" Value="Center"/>
+                        <Setter Property="VerticalContentAlignment" Value="Center"/>
+                        <Setter Property="Background" Value="Transparent"/>
+                        <Setter Property="BorderThickness" Value="0"/>
+                        
+                        <!--This line is to select the first chat automatically-->
+                        <!--<Setter Property="IsChecked" Value="{Binding ChatIsSelected, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>-->
+                        
+                        <Setter Property="Template">
+                            <Setter.Value>
+                                <ControlTemplate TargetType="{x:Type ToggleButton}">
+                                    <Border x:Name="border"
+                                            Background="{TemplateBinding Background}"
+                                            CornerRadius="20"
+                                            BorderBrush="{TemplateBinding BorderBrush}"
+                                            BorderThickness="{TemplateBinding BorderThickness}"
+                                            Padding="{TemplateBinding Padding}"
+                                            SnapsToDevicePixels="True">
+                                        <Grid>
+                                            <Grid.RowDefinitions>
+                                                <!--Contains contactname, photo, message, message time, etc.-->
+                                                <RowDefinition Height="Auto"/>
+                                                
+                                                <!--Contains options such as Archive, pin, delete, mute, etc.-->
+                                                <RowDefinition Height="Auto"/>
+                                            </Grid.RowDefinitions>
+                                        </Grid>
+                                    </Border>
+                                </ControlTemplate>
+                            </Setter.Value>
+                        </Setter>
+                    </Style>
+                </RadioButton.Style>
+            </RadioButton>
         </DataTemplate>
     </UserControl.Resources>
-    <Grid Margin="10 0">
+    <Grid Margin="25 15">
         <StackPanel>
             <!--List of Chats-->
             <StackPanel Orientation="Horizontal">
-                <Image Source="{StaticResource MessageOne}" 
-                   Width="50" Height="50" 
-                   Margin="1 1 1 1" Stretch="UniformToFill"/>
+                <Image Source="{StaticResource ChatText}" 
+                   Width="30" Height="30" 
+                   Margin="1 1 1 1"/>
                 <TextBlock
-                Margin="10 0 0 0"
+                Margin="5 0 0 0"
                 Text="All Chats"
                 FontWeight="SemiBold"
                 VerticalAlignment="Center">

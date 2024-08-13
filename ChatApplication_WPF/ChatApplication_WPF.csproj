@@ -15,12 +15,23 @@
     <None Remove="Resources\chatblank.png" />
     <None Remove="Resources\chatdots.png" />
     <None Remove="Resources\chattext.png" />
+    <None Remove="Resources\message-dots.png" />
+    <None Remove="Resources\message-plus.png" />
+    <None Remove="Resources\message.png" />
+    <None Remove="Resources\message1.png" />
+    <None Remove="Resources\message2.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\message-plus.png" />
   </ItemGroup>
 
   <ItemGroup>
     <Resource Include="Resources\chatblank.png" />
     <Resource Include="Resources\chatdots.png" />
     <Resource Include="Resources\chattext.png" />
+    <Resource Include="Resources\message-dots.png" />
+    <Resource Include="Resources\message.png" />
   </ItemGroup>
 
 </Project>
