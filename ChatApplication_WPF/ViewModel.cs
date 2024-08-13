@@ -93,7 +93,7 @@ namespace ChatApplication_WPF
                 ContactName = "Joe",
                 ContactPhoto = new Uri("G:/Studies/ChatApplication_WPF/ChatApplication_WPF/Images/user3.jpg", UriKind.RelativeOrAbsolute),
                 Message = "I haven't seen you in a long time, how are you?",
-                LastMessageTime = "Tue, 11:30 AM",
+                LastMessageTime = "Sun, 10:21 AM",
                 ChatIsSelected = true
             },
             new ChatListData
@@ -101,7 +101,15 @@ namespace ChatApplication_WPF
                 ContactName = "Mike",
                 ContactPhoto = new Uri("G:/Studies/ChatApplication_WPF/ChatApplication_WPF/Images/user1.jpg", UriKind.RelativeOrAbsolute),
                 Message = "Where are you? I am in the city.",
-                LastMessageTime = "Tue, 11:30 AM",
+                LastMessageTime = "Fri, 17:20 PM",
+                ChatIsSelected = true
+            },
+            new ChatListData
+            {
+                ContactName = "Jane",
+                ContactPhoto = new Uri("G:/Studies/ChatApplication_WPF/ChatApplication_WPF/Images/user4.jpg", UriKind.RelativeOrAbsolute),
+                Message = "I'm so glad you are doing well!",
+                LastMessageTime = "Thurs, 15:00 PM",
                 ChatIsSelected = true
             }
             ];
@@ -120,6 +128,7 @@ namespace ChatApplication_WPF
         public ViewModel() 
         {
             LoadStatusThumbs();
+            LoadChats();
         }
 
         public event PropertyChangedEventHandler? PropertyChanged;

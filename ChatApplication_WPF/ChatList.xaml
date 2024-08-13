@@ -40,6 +40,67 @@
                                                 <!--Contains options such as Archive, pin, delete, mute, etc.-->
                                                 <RowDefinition Height="Auto"/>
                                             </Grid.RowDefinitions>
+                                            
+                                            <!--#region Contact-->
+                                            <Grid
+                                                Grid.Row="0">
+                                                <Grid.ColumnDefinitions>
+                                                    <!--Profile Photo-->
+                                                    <ColumnDefinition Width="Auto"/>
+
+                                                    <!--Contact Name & Message-->
+                                                    <ColumnDefinition/>
+
+                                                    <!--Last Message Time-->
+                                                    <ColumnDefinition Width="Auto"/>
+                                                </Grid.ColumnDefinitions>
+
+                                                <Ellipse>
+                                                    <Ellipse.Fill>
+                                                        <ImageBrush
+                                                            Stretch="UniformToFill"
+                                                            ImageSource="{Binding ContactPhoto}"/>
+                                                    </Ellipse.Fill>
+                                                </Ellipse>
+                                                
+                                                <!--Contact Name & Message-->
+                                                <Grid
+                                                    Grid.Column="1"
+                                                    Margin="28 0">
+                                                    <Grid.RowDefinitions>
+                                                        <RowDefinition/> <!--Name-->
+                                                        <RowDefinition/> <!--Message-->
+                                                    </Grid.RowDefinitions>
+
+                                                    <TextBlock
+                                                        Text="{Binding ContactName}"
+                                                        FontSize="15">
+                                                        <TextBlock.Style>
+                                                            <Style
+                                                                TargetType="{x:Type TextBlock}">
+                                                                <Setter Property="FontWeight" Value="SemiBold"/>
+                                                                <Style.Triggers>
+                                                                    <DataTrigger 
+                                                                        Binding="{Binding IsMouseOver, RelativeSource={RelativeSource AncestorType={x:Type ToggleButton}}}" Value="True">
+                                                                        <Setter Property="FontWeight" Value="Bold"/>
+                                                                    </DataTrigger>
+                                                                </Style.Triggers>
+                                                            </Style>
+                                                        </TextBlock.Style>
+                                                    </TextBlock>
+
+                                                    <TextBlock
+                                                        Grid.Row="1"
+                                                        Text="{Binding Message}"
+                                                        FontWeight="SemiBold"/>
+
+                                                </Grid>
+                                            </Grid>
+                                            <!--#endregion-->
+
+                                            <!--#region Options-->
+                                            <!--#endregion-->
+
                                         </Grid>
                                     </Border>
                                 </ControlTemplate>
@@ -50,7 +111,7 @@
             </RadioButton>
         </DataTemplate>
     </UserControl.Resources>
-    <Grid Margin="25 15">
+    <Grid Margin="25 10">
         <StackPanel>
             <!--List of Chats-->
             <StackPanel Orientation="Horizontal">
@@ -58,7 +119,7 @@
                    Width="30" Height="30" 
                    Margin="1 1 1 1"/>
                 <TextBlock
-                Margin="5 0 0 0"
+                Margin="8 0 0 0"
                 Text="All Chats"
                 FontWeight="SemiBold"
                 VerticalAlignment="Center">
@@ -66,7 +127,8 @@
             </StackPanel>
             <ItemsControl 
                 ItemsSource="{Binding Chats}"
-                ItemTemplate="{StaticResource chatButtonItemTemplate}">
+                ItemTemplate="{StaticResource chatButtonItemTemplate}"
+                Padding="0 15">
                     <ItemsControl.DataContext>
                         <local:ViewModel/>
                     </ItemsControl.DataContext>
