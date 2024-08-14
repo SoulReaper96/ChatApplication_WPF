@@ -12,7 +12,16 @@
         <BitmapImage x:Key="MessageTwo" UriSource="Resources/message-dots.png"/>
         <BitmapImage x:Key="MessageThree" UriSource="Resources/message-plus.png"/>
 
-        <!--Style For Buttons-->        
+                <!--Style For Paths-->
+        <Style TargetType="{x:Type Path}">
+            <Setter Property="Stretch" Value="Uniform"/>
+            <Setter Property="Height" Value="20"/>
+            <Setter Property="Width" Value="20"/>
+
+            <!--Add Animations Later-->
+        </Style>
+        
+        <!--Style For Buttons-->
         <Style x:Key="CustomButtonStyle" TargetType="{x:Type Button}">
             <Setter Property="Background" Value="#49a078"/>
             <Setter Property="Foreground" Value="White"/>
@@ -43,15 +52,6 @@
                     <Setter Property="Background" Value="#2e6e31"/>
                 </Trigger>
             </Style.Triggers>
-        </Style>
-
-        <!--Style For Paths-->
-        <Style TargetType="{x:Type Path}">
-            <Setter Property="Stretch" Value="Uniform"/>
-            <Setter Property="Height" Value="20"/>
-            <Setter Property="Width" Value="20"/>
-
-            <!--Add Animations Later-->
         </Style>
 
         <Style x:Key="ToggleIconButtonStyle" TargetType="{x:Type ToggleButton}">
