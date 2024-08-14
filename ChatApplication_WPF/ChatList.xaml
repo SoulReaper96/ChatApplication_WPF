@@ -127,8 +127,32 @@
                                             <!--#region Options-->
                                             <Grid
                                                 Grid.Row="1"
-                                                Height="30">
+                                                Height="Auto">
+                                                <Grid.ColumnDefinitions>
+                                                    <ColumnDefinition Width="Auto"/>
+                                                </Grid.ColumnDefinitions>
                                                 
+                                                <!--Options Buttons-->
+                                                <UniformGrid 
+                                                    Grid.Column="1" 
+                                                    Columns="4">
+                                                    <Button Style="{StaticResource CustomButtonStyle}">
+                                                        <Image Source="G:/Studies/ChatApplication_WPF/ChatApplication_WPF/Icons/pinned.png"/>
+                                                    </Button>
+
+                                                    <Button Style="{StaticResource CustomButtonStyle}">
+                                                        <Image Source="G:/Studies/ChatApplication_WPF/ChatApplication_WPF/Icons/archive.png"/>
+                                                    </Button>
+
+                                                    <Button Style="{StaticResource CustomButtonStyle}">
+                                                        <Image Source="G:/Studies/ChatApplication_WPF/ChatApplication_WPF/Icons/bell-off.png"/>
+                                                    </Button>
+
+                                                    <Button Style="{StaticResource CustomButtonStyle}">
+                                                        <Image Source="G:/Studies/ChatApplication_WPF/ChatApplication_WPF/Icons/trash.png"/>
+                                                    </Button>
+                                                    
+                                                </UniformGrid>
                                             </Grid>
                                             <!--#endregion-->
 
@@ -142,6 +166,9 @@
             </RadioButton>
         </DataTemplate>
     </UserControl.Resources>
+    
+    <!--To-Do: Scroll bar style-->
+    <ScrollViewer HorizontalScrollBarVisibility="Disabled">
     <Grid Margin="25 10">
         <StackPanel>
             <!--List of Chats-->
@@ -166,4 +193,5 @@
             </ItemsControl>
         </StackPanel>
     </Grid>
+    </ScrollViewer>
 </UserControl>
