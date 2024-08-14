@@ -5,16 +5,16 @@ winexe
 C#
 .cs
 G:\GitHub Repo Cloned\SoulReaper96\ChatApplication_WPF\ChatApplication_WPF\obj\Debug\net8.0-windows\
-ChatApplication_WPF_2qhnef4p_wpftmp
+ChatApplication_WPF
 none
 false
-TRACE;RELEASE;NET;NET8_0;NETCOREAPP
+TRACE;DEBUG;NET;NET8_0;NETCOREAPP
 G:\GitHub Repo Cloned\SoulReaper96\ChatApplication_WPF\ChatApplication_WPF\App.xaml
 3-421279274
 
-14-690576021
-396-1270035808
+9833316343
+198-635017904
 ChatList.xaml;MainWindow.xaml;StatusThumbs.xaml;
 
-True
+False
 

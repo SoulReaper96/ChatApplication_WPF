@@ -83,15 +83,16 @@ namespace ChatApplication_WPF
             new ChatListData
             {
                 ContactName = "Stella",
-                ContactPhoto = new Uri("G:/Studies/ChatApplication_WPF/ChatApplication_WPF/Images/user0.jpg", UriKind.RelativeOrAbsolute),
+                ContactPhoto = new Uri("G:/GitHub Repo Cloned/SoulReaper96/ChatApplication_WPF/ChatApplication_WPF/Images/status1.jpg", UriKind.RelativeOrAbsolute),
                 Message = "Hello, how are you?",
                 LastMessageTime = "Tue, 11:30 AM",
                 ChatIsSelected = true
             },
             new ChatListData
             {
+
                 ContactName = "Joe",
-                ContactPhoto = new Uri("G:/Studies/ChatApplication_WPF/ChatApplication_WPF/Images/user3.jpg", UriKind.RelativeOrAbsolute),
+                ContactPhoto = new Uri("G:/GitHub Repo Cloned/SoulReaper96/ChatApplication_WPF/ChatApplication_WPF/Images/status3.jpg", UriKind.RelativeOrAbsolute),
                 Message = "I haven't seen you in a long time, how are you?",
                 LastMessageTime = "Sun, 10:21 AM",
                 ChatIsSelected = true
@@ -99,7 +100,7 @@ namespace ChatApplication_WPF
             new ChatListData
             {
                 ContactName = "Mike",
-                ContactPhoto = new Uri("G:/Studies/ChatApplication_WPF/ChatApplication_WPF/Images/user1.jpg", UriKind.RelativeOrAbsolute),
+                ContactPhoto = new Uri("G:/GitHub Repo Cloned/SoulReaper96/ChatApplication_WPF/ChatApplication_WPF/Images/user1.jpg", UriKind.RelativeOrAbsolute),
                 Message = "Where are you? I am in the city.",
                 LastMessageTime = "Fri, 17:20 PM",
                 ChatIsSelected = true
@@ -107,9 +108,9 @@ namespace ChatApplication_WPF
             new ChatListData
             {
                 ContactName = "Jane",
-                ContactPhoto = new Uri("G:/Studies/ChatApplication_WPF/ChatApplication_WPF/Images/user4.jpg", UriKind.RelativeOrAbsolute),
+                ContactPhoto = new Uri("G:/GitHub Repo Cloned/SoulReaper96/ChatApplication_WPF/ChatApplication_WPF/Images/user4.jpg", UriKind.RelativeOrAbsolute),
                 Message = "I'm so glad you are doing well!",
-                LastMessageTime = "Thurs, 15:00 PM",
+                LastMessageTime = "Thur, 15:00 PM",
                 ChatIsSelected = true
             }
             ];
